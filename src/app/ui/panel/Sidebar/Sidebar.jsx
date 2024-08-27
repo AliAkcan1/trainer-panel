@@ -13,14 +13,11 @@ const Sidebar = () => {
   return (
     <SelectedSideLinkContext.Provider value={{ selectedSideLink, setSelectedSideLink }}>
       <div className='flex flex-col items-center justify-center p-0 m-0 h-screen'>
-        <div className='py-6 bg-primary w-full flex justify-center'>
+        <div className='py-4 bg-primary w-full flex justify-center'>
           <a href="/" className=''>Alanyaspor Logo</a>
         </div>
         <div className='bg-primary w-full h-full'>
           <ul className='flex flex-col justify-center items-center bg-primary'>
-            <li className='w-full'>
-              <SideLink text='Anasayfa' link='/' />
-            </li>
             <li className='w-full'>
               <SideLink text='Öğrenciler' link='/panel/users' />
             </li>
